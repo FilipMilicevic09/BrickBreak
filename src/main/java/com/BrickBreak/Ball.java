@@ -4,6 +4,7 @@
 package com.BrickBreak;
 import java.awt.*;
 
+
 public class Ball {
 	//your code here!
 	
@@ -12,8 +13,7 @@ public class Ball {
 	private int y;
 	private int size;
 	
-	//constructor(s):
-	
+	Ball (int, int, int)
 	//methods:
 	public void draw(Graphics g){	
 	g.setColor(Color.cyan);
