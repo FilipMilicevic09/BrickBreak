@@ -12,16 +12,16 @@ public class Ball {
 	private int x;
 	private int y;
 	private int size;
-	private int xVelocity;
-	private int yVelocity;
+	private int XVelocity;
+	private int YVelocity;
 	
 	// constructors
 	Ball (int y, int x, int size){
 	this.x = x;
 	this.y = y;
 	this.size = size;
-	xVelocity = 1;
-	yVelocity = 1;
+	XVelocity = 1;
+	YVelocity = 1;
 	}
 	//methods:
 	public void draw(Graphics g){	
@@ -34,7 +34,29 @@ public class Ball {
 	public int getYpos(){
 		return  y;
 	}
-	public in getSize(){
+	public int getSize(){
 		return size;
+	}
+	public void reverseY(){
+		YVelocity /= -1;
+	}
+	public void reverseX(){
+        XVelocity /= -1;
+    }
+	public void setXVelocity(int XVelocity){
+		this.XVelocity = XVelocity;
+	}
+	public void setYVelocity(int YVelocity){
+		this.YVelocity = YVelocity;
+	}
+	public void setX (int x){
+		this.x = x;
+	}
+	public void setY (int y){
+		this.y = y;
+	}
+	public void move(){
+	x += XVelocity;
+	y += YVelocity;	
 	}
 }
