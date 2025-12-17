@@ -24,6 +24,9 @@ public class Ball {
 	YVelocity = 1;
 	}
 	//methods:
+
+	//Precondition: g is a valid Graphics object and x, y, and size have valid values
+	//Postcondition: A red filled oval of diameter size is drawn at position (x, y)
 	public void draw(Graphics g){	
 	g.setColor(Color.red);
 	g.fillOval(x, y, size, size);
@@ -55,6 +58,8 @@ public class Ball {
 	public void setY (int y){
 		this.y = y;
 	}
+	//Precondition: x, y, XVelocity, and YVelocity are valid values
+	//Postcondition: x is increased by XVelocity and y is increased by YVelocity
 	public void move(){
 	x += XVelocity;
 	y += YVelocity;	

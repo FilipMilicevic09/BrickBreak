@@ -1,6 +1,5 @@
 package com.BrickBreak;
 
-import java.awt.Graphics;
 import java.awt.*;
 
 public class Paddle{
@@ -24,6 +23,8 @@ public class Paddle{
 		this.width = width;
 	}
 	//methods:
+	//Precondition: g is a valid Graphics object and x, y, width, and height have valid values.
+	//Postcondition: A white rectangle is drawn on the screen at position (x, y) with the given width and height.
 	public void draw(Graphics g){
 		g.setColor (Color.white);
 		g.fillRect (x, y, width, height);
@@ -57,6 +58,8 @@ public class Paddle{
 	public void setX (int x){
 		this.x = x;
 	}
+	//Precondition: x, velocity, and width are valid values, and width is greater than 0
+	//Postcondition: x is updated by velocity and is kept within the bounds 0 to 695 - width
 	public void move(){
 		x += velocity;
 	
