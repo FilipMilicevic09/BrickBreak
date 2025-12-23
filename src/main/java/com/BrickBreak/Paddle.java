@@ -1,3 +1,5 @@
+//Filip Milicevic
+//defined a plaer controlled paddle by managing its size/proportions, positions, and horizontal movement.
 package com.BrickBreak;
 
 import java.awt.*;

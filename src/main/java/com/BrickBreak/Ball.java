@@ -1,5 +1,5 @@
 //Filip Milicevic
-// a brief description
+// This class defines the properties and behaviors of a game ball, managing the position, size, and movements speed. The methods render the ball as a red oval and updaes its coordinates to simulate motion and bouncing.
 
 package com.BrickBreak;
 import java.awt.*;
